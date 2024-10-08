@@ -1,6 +1,8 @@
 # treinando "List Comprehension" ou listcomps
 # quebra de linhas são ignoradas dentro de {}, [], ()
 
+
+
 a = [
 	x + 1
 	for x in range(10)
@@ -15,3 +17,10 @@ c = (
 	x + 1
 	for x in range(10)
 ) # precisa iterar o objeto. loop for: for i in c: print(i)
+
+d = [
+	(lambda x, y: x * y**2)(x, y)
+for x in range(5)
+							for y in range(10)                 ]
+
+
