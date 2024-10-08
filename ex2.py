@@ -3,7 +3,7 @@ import collections
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
 class FrenchDeck:
-	ranks = [str(x) for x in range(2, 11)] + 'J Q K A'.split() # list('JQKA')
+	ranks = [f'{x}' for x in range(2, 11)] + 'J Q K A'.split() # list('JQKA')
 	suits = 'spades diamonds clubs hearts'.split()
 	
 	def __init__(self):
