@@ -1,0 +1,1 @@
+$ python3 -i ex1.py # para interagir com o script
