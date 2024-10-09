@@ -18,7 +18,7 @@ c = (
 	for x in range(10)
 ) # precisa iterar o objeto. loop for: for i in c: print(i)
 
-d = [
+d = [# teste
 	(lambda x, y: x * y**2)(x, y)
 for x in range(5)
 							for y in range(10)                 ]
