@@ -2,7 +2,7 @@
 Treino mais aprofundando de Python. Carregar códigos Python
 
 ## Interactive shell with python file
-- Create virtaul environment (Linux)
+- Create virtaul environment
 ```
 python3 -m venv .venv
 ```
@@ -10,7 +10,7 @@ python3 -m venv .venv
 ```
 source .venv/bin/activate
 ```
-- Deactivated virtaul environment (Linux)
+- Deactivated virtaul environment
 ```
 deactivate
 ```
