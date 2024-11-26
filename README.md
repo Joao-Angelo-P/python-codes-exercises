@@ -25,3 +25,4 @@ python3 -i ex3.py
 >>> __load__file(arq)
 ['oi', 'oi2', 'oi3', 'oi4', 'oi5', 'oi6']
 ```
+- No exercício 6(ex6.py), pequena demostração do porquê não usar lista vazia no segmento __init__ de classes/objetos. O mais correto é adicionar um 'default' de 'None' e declarar a lista num 'if'.
