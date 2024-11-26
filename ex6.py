@@ -13,11 +13,11 @@ class B(object):
             self.items = items
 
 a = A()
-a.items += [x + 1 for x in range(10)]
+a.items += [x + 1 for x in range(10)] # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 b = B()
-b.items += [x + 1 for x in range(10)]
+b.items += [x + 1 for x in range(10)] # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-c = A()
-d = B()
+c = A() # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+d = B() # []
 
