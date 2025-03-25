@@ -1,0 +1,1 @@
+py -c "x = lambda: setattr(__import__('__main__'), '__file__', 'prompt'); x(); y = lambda: print(__import__('__main__').__dict__); y()"
