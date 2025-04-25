@@ -1,1 +1,1 @@
-from .other import _test
+from .utils import _test
