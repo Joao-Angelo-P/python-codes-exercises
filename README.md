@@ -1,6 +1,14 @@
 # python-codes-exercises
 Treino mais aprofundando de Python. Carregar códigos Python
-
+## Try to simulate "python -m tkinter"
+- To run in the same directory path
+```
+(directory path)>python -m pkg_teste
+```
+- Configure a $PYTHONPATH to directory path and you will can run globally
+```
+python -m pkg_teste
+```  
 ## Interactive shell with python file
 - Create virtaul environment
 ```
