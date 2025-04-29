@@ -25,7 +25,7 @@ Por definição:
 ## Diferenças entre funções
 
 Como o Fatorial é uma operação de produto, então há a possibilidade de mudar a ordem dos números sem alterar o resultado. 
-- **Na ordem crescente**: "função reduce" e "loop for", respectivamente, fatorial_1 e funções fatorial_4   
+- **Na ordem crescente**: "função reduce" e "loop for", respectivamente,funções fatorial_1 e fatorial_4   
 - **Na ordem decrescente**: recursão e "loop while", respectivamente, funções fatorial_2 e fatorial_3
 
 ---
