@@ -3,7 +3,7 @@ import unittest
 
 class TestFatorial(unittest.TestCase):
     def setUp(self):
-        self.expected = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800]
+        self.expected = [1, 1, 2, 6, 24, 120, 720, 5_040, 40_320, 362_880, 3_628_800]
         
     def test_fatorial1(self):
         for i in range(11):
