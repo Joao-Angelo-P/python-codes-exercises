@@ -1,7 +1,7 @@
 """
 Formas de montar uma fatorial -> n!
 """
-from functools import reduce
+from functools import reduce, wraps
 from operator import mul
 
 __all__=['fatorial_1', #1000 loops, best of 5: 62.8 usec per loop
