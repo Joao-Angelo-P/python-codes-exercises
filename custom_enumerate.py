@@ -6,7 +6,9 @@ Work with any Iterable or Iterator,
 >>> list(cenumerate([0, 1, 'AB']))
 [(0, 0), (1, 1), (2, 'AB')]
 >>> list(cenumerate(range(1, 6, 1)))
-[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]"""
+[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+>>> from string import ascii_uppercase as letters; _chr=lambda x: dict(cenumerate(letters))[x]; 'A'==_chr(0)==chr(65)
+True"""
 
 from typing import Iterable, Tuple, Any, Generator
 def cenumerate(iterable: Iterable) -> Generator[Tuple[int, Any], None, None]:
