@@ -1,5 +1,6 @@
 """
-Work with any Iterable or Iterator
+Work with any Iterable or Iterator,
+Пример:
 >>> list(cenumerate('ABC'))
 [(0, 'A'), (1, 'B'), (2, 'C')]
 >>> list(cenumerate([0, 1, 'AB']))
