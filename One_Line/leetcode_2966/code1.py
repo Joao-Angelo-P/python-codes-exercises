@@ -8,22 +8,23 @@ Without the decorator, this program don't pass all the tests. It stuck in "Time 
 class Solution:
     def d_sort(f):
         def wrap(*args, **kw):
-            args[1].sort()
-            l = len(args[1])
+            self_, nums_ = args[:2]
+            nums_.sort()
+            self_.l = len(nums_)
             # self.c = self.l//3
-            return f(l=l, *args, **kw)
+            return f(*args, **kw)
 
         return wrap
 
     # self, nums: List[int], k: int
-    divideArray = lambda self, nums, k, l: (
+    divideArray = lambda self, nums, k: (
         arr
         if (
             arr := [
-                nums[i : i + 3] for i in range(0, l, 3) if nums[i + 2] - nums[i] <= k
+                nums[i : i + 3] for i in range(0, self.l, 3) if nums[i + 2] - nums[i] <= k
             ]
         )
-        and len(arr) * 3 == len(nums)
+        and len(arr) * 3 == self.l
         else []
     )
 
