@@ -1,18 +1,15 @@
-# 1107 case -> Time Limit Exceeded
+# 1107 case -> Time Limit Exceeded (FIX)
 class Solution:
     divideArray = lambda self, nums, k: (
-        [
-            sorted(nums)[i : i + 3]
-            for i in range(0, len(sorted(nums)), 3)
-            if sorted(nums)[i + 2] - sorted(nums)[i] <= k
-        ]
-        if len(
-            [
-                sorted(nums)[i : i + 3]
-                for i in range(0, len(sorted(nums)), 3)
-                if sorted(nums)[i + 2] - sorted(nums)[i] <= k
+        arr
+        if nums.sort() is None
+        and (
+            arr := [
+                nums[i : i + 3]
+                for i in range(0, len(nums), 3)
+                if nums[i + 2] - nums[i] <= k
             ]
         )
-        == len(nums) // 3
+        and len(arr) * 3 == len(nums)
         else []
     )
